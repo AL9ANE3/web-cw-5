@@ -11,6 +11,7 @@ body {
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.808);
   height: 100%;
+  font-family: "Amiri", serif;
 }
 /* ---------- في كل مطلوب display: flex يجب اضافة ---------- */
 /* ------------- فقط flex عدل على تحت تعليقات  ------------- */
@@ -19,6 +20,9 @@ body {
 /* ---------------%اجعل الشريط الجانبي بطول 100------------- */
 .side-bar {
   /* flex */
+
+  display: flex;
+  height: 100%;
 }
 
 /* ------------------(العنوان: المطلوب #2)------------------ */
@@ -26,8 +30,10 @@ body {
 /* --اجعل العناصر (المنيو، معرفة المزيد، تواصل) تظهر بالنص-- */
 .head-ul {
   /* flex */
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
-
 
 /* ------------------(المحتوى: المطلوب #2)------------------ */
 /* ------------اجعل جميع عناصر المنيو تظهر بالنص------------ */
@@ -43,6 +49,10 @@ body {
   margin-top: 50px;
   border-radius: 20px;
   /* flex */
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-self: center;
 }
 .header {
   width: 100%;
